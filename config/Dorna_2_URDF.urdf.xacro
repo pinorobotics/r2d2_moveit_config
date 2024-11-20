@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="Dorna_2_URDF">
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+
+    <!-- Import Dorna_2_URDF urdf file -->
+    <xacro:include filename="$(find r2d2_urdf)/urdf/Dorna2.urdf" />
+
+    <!-- Import control_xacro -->
+    <xacro:include filename="Dorna_2_URDF.ros2_control.xacro" />
+
+
+    <xacro:Dorna_2_URDF_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
+
+</robot>

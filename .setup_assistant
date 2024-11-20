@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: r2d2_urdf
+    relative_path: urdf/Dorna2.urdf
+  srdf:
+    relative_path: config/Dorna_2_URDF.srdf
+  package_settings:
+    author_name: aeon_flux
+    author_email: aeon_flux@eclipso.ch
+    generated_timestamp: 1731992693
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
