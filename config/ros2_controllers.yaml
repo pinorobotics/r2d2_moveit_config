@@ -19,7 +19,6 @@ dorna2_arm_controller:
       - Joint_3
       - Joint_4
     command_interfaces:
-      - position
+      []
     state_interfaces:
-      - position
-      - velocity
+      []
