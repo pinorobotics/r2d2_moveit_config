@@ -13,6 +13,13 @@ Run MoveIt Setup Assistant:
 ros2 launch moveit_setup_assistant setup_assistant.launch.py
 ```
 
+Build:
+```
+cd <ROS WORKSPACE>
+colcon build
+source install/setup.zsh
+```
+
 Test generated files:
 ```
 ros2 launch r2d2_moveit_config demo.launch.py
