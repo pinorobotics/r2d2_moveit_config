@@ -13,6 +13,8 @@ Run MoveIt Setup Assistant:
 ros2 launch moveit_setup_assistant setup_assistant.launch.py
 ```
 
+- Before pressing "Generate" make sure to uncheck "initial_positions.yaml". MoveIt Setup Assistant uses default joint values from URDF, when it generatess this file, which results in all values to be equal "0". Since we want the robot to start from its home position (and not simply "0"), we set initial values manually inside "initial_positions.yaml" (which is Dorna2 "home" position).
+
 Build:
 ```
 cd <ROS WORKSPACE>
