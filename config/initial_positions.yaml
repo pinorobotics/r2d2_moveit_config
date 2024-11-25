@@ -1,8 +1,13 @@
 # Default initial positions for Dorna_2_URDF's ros2_control fake system
 
+# Dorna2 home position is close to robot hard limits which makes MoveIt Servo to fail to
+# process any movement commands with "servo_node Joint_* close to a position limit. Halting."
+# For that reason we cannot use home position as-is.
+# Instead we substract joint_limit_margin from all home position values which moves all joints away
+# from hard limits.
 initial_positions:
-  Joint_0: 3.1415
-  Joint_1: 3.1415
-  Joint_2: -2.4783
-  Joint_3: 2.3561
+  Joint_0: 3.0815
+  Joint_1: 3.0815
+  Joint_2: -2.3783
+  Joint_3: 2.261
   Joint_4: 0
