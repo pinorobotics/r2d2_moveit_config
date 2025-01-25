@@ -1,10 +1,10 @@
-**r2d2** (ros2dorna2) - set of ROS2 packages which provide support for [Dorna2 robotic arm](https://dorna.ai/).
+[**r2d2** (ros2dorna2)](https://github.com/pinorobotics/r2d2) - set of ROS2 packages which provide support for [Dorna2 robotic arm](https://dorna.ai/).
 
 **r2d2_moveit_config** package contains MoveIt2 configuration files for Dorna2 robotic arm
 
 NOTE: This is unofficial Dorna ROS2 package. For official Dorna software follow https://dorna.ai/
 
-To use this package with MoveItConfigsBuilder its name should be in form "<PACKAGE_NAME>_moveit_config"
+NOTE: This package can be used with [MoveItConfigsBuilder](https://github.com/moveit/moveit2/blob/main/moveit_configs_utils/moveit_configs_utils/moveit_configs_builder.py), as it satisfies MoveItConfigsBuilder package naming requirement "<PACKAGE_NAME>_moveit_config"
 
 # Generating MoveIt configuration files
 
@@ -28,6 +28,10 @@ ros2 launch r2d2_moveit_config demo.launch.py
 ```
 
 Set "Goal state" to "valid random" and press "Plan". MoveIt should generate the trajectory.
+
+# Documentation
+
+- [r2d2](https://github.com/pinorobotics/r2d2)
 
 # Contacts
 
