@@ -27,7 +27,7 @@ Test generated files:
 ros2 launch r2d2_moveit_config demo.launch.py
 ```
 
-Set "Goal state" to "valid random" and press "Plan". MoveIt should generate the trajectory.
+Inside MotionPlanning panel, set "Goal state" to "valid random" and press "Plan". MoveIt should generate the trajectory.
 
 # Documentation
 
