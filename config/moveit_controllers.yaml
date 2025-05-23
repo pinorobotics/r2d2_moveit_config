@@ -8,8 +8,6 @@ moveit_simple_controller_manager:
 
   dorna2_arm_controller:
     type: FollowJointTrajectory
-    action_ns: follow_joint_trajectory
-    default: true
     joints:
       - Joint_0
       - Joint_1
