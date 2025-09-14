@@ -6,6 +6,9 @@ controller_manager:
     dorna2_arm_controller:
       type: joint_trajectory_controller/JointTrajectoryController
 
+    # Controller for MoveIt servo
+    dorna2_position_controller:
+      type: position_controllers/JointGroupPositionController
 
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
@@ -23,3 +26,13 @@ dorna2_arm_controller:
     state_interfaces:
       - position
       - velocity
+    allow_nonzero_velocity_at_trajectory_end: true
+
+dorna2_position_controller:
+  ros__parameters:
+    joints:
+      - Joint_0
+      - Joint_1
+      - Joint_2
+      - Joint_3
+      - Joint_4

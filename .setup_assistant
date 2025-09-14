@@ -7,7 +7,7 @@ moveit_setup_assistant_config:
   package_settings:
     author_name: aeon_flux
     author_email: aeon_flux@eclipso.ch
-    generated_timestamp: 1732404600
+    generated_timestamp: 1756860789
   control_xacro:
     command:
       - position
